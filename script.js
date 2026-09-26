@@ -104,5 +104,3 @@ document.querySelectorAll(".project").forEach((card) => {
     card.style.setProperty("--my", `${e.clientY - r.top}px`);
   });
 });
-
-document.getElementById("year").textContent = new Date().getFullYear();
