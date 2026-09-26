@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yateen  | Software Engineer</title>
+  <meta name="description" content="Yateen  — CS undergrad at IIT Jodhpur, GSoC 2026 contributor at MetaBrainz, building distributed systems and full-stack products." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">Y<span></a>
+    <nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <p class="mono accent reveal">Hi, my name is</p>
+        <h1 class="reveal">Yateen .</h1>
+        <h2 class="reveal">I build <span class="typed" id="typed"></span><span class="cursor">|</span></h2>
+        <p class="hero-sub reveal">
+          CS undergrad at <strong>IIT Jodhpur</strong> and <strong>Google Summer of Code 2026</strong> contributor at the
+          MetaBrainz Foundation. I love working on distributed systems, real-time collaboration, and shipping
+          production-grade full-stack features.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="mailto:yateen2109@gmail.com" class="btn btn-outline">Get in touch</a>
+        </div>
+        <div class="hero-social reveal">
+          <a href="https://github.com/yateen2109" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/yateen--21092004-/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+          </a>
+          <a href="mailto:yateen2109@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4.24-8 5-8-5V6l8 5 8-5v2.24Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono accent">01.</span> About Me</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a Computer Science and Engineering student at the <strong>Indian Institute of Technology, Jodhpur</strong>
+              (Class of 2027), originally from Palampur. I enjoy digging into how systems work under the hood, from
+              consensus algorithms and CRDTs to the APIs and interfaces people use every day.
+            </p>
+            <p>
+              This summer I was selected for <strong>Google Summer of Code 2026</strong> at the MetaBrainz Foundation, where I
+              shipped four production features for ListenBrainz's playlist platform. Before that, I interned at
+              <strong>Accenture</strong> building GenAI-powered automation services for enterprise workflows.
+            </p>
+            <p>
+              Outside of code, I was the Assistant Event Head at IGNUS 2025, IIT Jodhpur's cultural fest, managing the
+              flagship dance event <em>Nrityansh</em> and logistics across multiple colleges.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono accent">02.</span> Experience</h2>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="card">
+              <div class="card-head">
+                <div>
+                  <h3>Open Source Contributor, Google Summer of Code 2026</h3>
+                  <p class="org">MetaBrainz Foundation · Remote</p>
+                </div>
+                <span class="date mono">Jul 2026 – Sep 2026</span>
+              </div>
+              <ul>
+                <li>Selected for GSoC 2026; engineered <strong>4 production features</strong> for ListenBrainz's playlist platform under 3 senior-engineer mentors.</li>
+                <li>Architected <strong>TimescaleDB + REST API</strong> infrastructure for playlist tagging, supporting 50 tags/playlist with normalization, deduplication, authorization, and server-side validation.</li>
+                <li>Engineered playlist search with fuzzy matching (3+ characters) and 25-result pagination, plus collection imports with 100-track virtualized fetching and 500-track batch writes.</li>
+                <li>Developed scalable <strong>React/TypeScript</strong> playlist interfaces with 5 client-side sort modes, multi-tag filtering, and infinite-query pagination for large MusicBrainz collections.</li>
+              </ul>
+              <div class="tags"><span>TimescaleDB</span><span>REST</span><span>React</span><span>TypeScript</span><span>Python</span></div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="card">
+              <div class="card-head">
+                <div>
+                  <h3>Advanced Application Engineering Intern</h3>
+                  <p class="org">Accenture India · Bangalore</p>
+                </div>
+                <span class="date mono">Apr 2026 – Jun 2026</span>
+              </div>
+              <ul>
+                <li>Developed Python-based automation services for the Becton Dickinson engagement, integrating <strong>GenAI workflows</strong> to automate multi-step enterprise processes and reducing manual effort by <strong>~40%</strong>.</li>
+                <li>Engineered modular data-processing and validation pipelines handling 1,000+ test records, improving processing throughput by <strong>2×</strong> through workflow optimization.</li>
+              </ul>
+              <div class="tags"><span>Python</span><span>GenAI</span><span>Data Pipelines</span><span>Automation</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono accent">03.</span> Things I've Built</h2>
+        <div class="projects-grid">
+          <article class="project reveal">
+            <div class="project-top">
+              <svg class="folder" viewBox="0 0 24 24"><path d="M10 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-8l-2-2Z"/></svg>
+              <a href="https://github.com/yateen2109/RafT" target="_blank" rel="noopener" aria-label="RaftKV on GitHub" class="project-link">
+                <svg viewBox="0 0 24 24"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H5v12h12v-6h2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg>
+              </a>
+            </div>
+            <h3>RaftKV</h3>
+            <p class="project-date mono">Feb 2026 – Mar 2026</p>
+            <p>
+              A 3-node fault-tolerant key-value store built on Raft consensus, with leader election, log replication, WAL-based
+              crash recovery, and Kubernetes deployment using a StatefulSet with per-node persistent storage.
+            </p>
+            <div class="metrics">
+              <div><strong>180–350ms</strong><span>leader recovery</span></div>
+              <div><strong>45 / 77ms</strong><span>p50 / p99 writes</span></div>
+              <div><strong>100%</strong><span>write success</span></div>
+            </div>
+            <div class="tags"><span>C++20</span><span>gRPC</span><span>Protobuf</span><span>CMake</span><span>Docker</span><span>Kubernetes</span></div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-top">
+              <svg class="folder" viewBox="0 0 24 24"><path d="M10 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-8l-2-2Z"/></svg>
+              <a href="https://github.com/yateen2109/CollabText" target="_blank" rel="noopener" aria-label="CollabText on GitHub" class="project-link">
+                <svg viewBox="0 0 24 24"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H5v12h12v-6h2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg>
+              </a>
+            </div>
+            <h3>CollabText</h3>
+            <p class="project-date mono">Dec 2025 – Jan 2026</p>
+            <p>
+              A real-time collaborative editor powered by a character-level CRDT engine. Position-based identifiers merge
+              concurrent edits across clients without a central lock, applying each remote op in O(log n) via binary-search insertion.
+            </p>
+            <div class="metrics">
+              <div><strong>8.3K</strong><span>ops/sec peak</span></div>
+              <div><strong>53–63ms</strong><span>p50 latency</span></div>
+              <div><strong>O(log n)</strong><span>remote apply</span></div>
+            </div>
+            <div class="tags"><span>TypeScript</span><span>React</span><span>Express</span><span>WebSockets</span><span>CRDT</span><span>Vitest</span></div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-top">
+              <svg class="folder" viewBox="0 0 24 24"><path d="M10 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-8l-2-2Z"/></svg>
+              <a href="https://github.com/yateen2109/Vulnerability-scanner" target="_blank" rel="noopener" aria-label="VulnCheck on GitHub" class="project-link">
+                <svg viewBox="0 0 24 24"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H5v12h12v-6h2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg>
+              </a>
+            </div>
+            <h3>VulnCheck</h3>
+            <p class="project-date mono">Oct 2025 – Nov 2025</p>
+            <p>
+              A hybrid vulnerability scanner combining static analysis with a fine-tuned CodeBERT model to catch SQL injection,
+              XSS, command injection, and hardcoded secrets in source code.
+            </p>
+            <div class="metrics">
+              <div><strong>98%</strong><span>detection accuracy</span></div>
+              <div><strong>4</strong><span>vuln classes</span></div>
+              <div><strong>Hybrid</strong><span>static + ML</span></div>
+            </div>
+            <div class="tags"><span>Python</span><span>Scikit-learn</span><span>CodeBERT</span><span>React</span><span>JavaScript</span></div>
+          </article>
+        </div>
+        <div class="center reveal">
+          <a href="https://github.com/yateen2109" target="_blank" rel="noopener" class="btn btn-outline">More on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono accent">04.</span> Skills &amp; Coursework</h2>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3>Languages</h3>
+            <div class="chips"><span>C++</span><span>Python</span><span>TypeScript</span><span>JavaScript</span><span>SQL</span></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Backend</h3>
+            <div class="chips"><span>Node.js</span><span>Express</span><span>Flask</span><span>REST</span><span>gRPC</span><span>WebSockets</span></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Frontend</h3>
+            <div class="chips"><span>HTML</span><span>CSS</span><span>React</span><span>Next.js</span></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Databases</h3>
+            <div class="chips"><span>PostgreSQL</span><span>MongoDB</span><span>TimescaleDB</span></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Tools &amp; DevOps</h3>
+            <div class="chips"><span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span><span>Git</span></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Coursework</h3>
+            <div class="chips">
+              <span>Data Structures</span><span>Algorithms</span><span>Pattern Recognition &amp; ML</span><span>AI</span>
+              <span>Databases</span><span>Web Services</span><span>Operating Systems</span><span>Software Engineering</span><span>HMI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-row">
+          <div class="card edu reveal">
+            <h3>🎓 Education</h3>
+            <p><strong>Indian Institute of Technology, Jodhpur</strong></p>
+            <p>B.Tech, Computer Science and Engineering</p>
+            <p class="mono date">Feb 2023 – Apr 2027</p>
+          </div>
+          <div class="card edu reveal">
+            <h3>🏆 Achievements &amp; Leadership</h3>
+            <p>Top 1% among ~1 million aspirants in <strong>JEE 2023</strong>.</p>
+            <p>Assistant Event Head, <strong>IGNUS 2025</strong>: ran the flagship dance event Nrityansh and multi-college logistics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container narrow">
+        <p class="mono accent reveal">05. What's next?</p>
+        <h2 class="contact-title reveal">Get In Touch</h2>
+        <p class="reveal">
+          I'm open to internships, full-time roles, and interesting open-source collaborations. Whether you have a question
+          or just want to say hi, my inbox is always open.
+        </p>
+        <a href="mailto:yateen2109@gmail.com" class="btn btn-primary btn-lg reveal">Say Hello</a>
+        <div class="contact-links reveal">
+          <a href="mailto:yateen2109@gmail.com">yateen2109@gmail.com</a>
+          <span>·</span>
+          <a href="tel:+917807331449">+91 78073 31449</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
